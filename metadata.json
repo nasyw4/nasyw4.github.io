@@ -1,0 +1,6 @@
+{
+  "name": "Nasywa Raihanah Portfolio",
+  "description": "Professional portfolio web application for Nasywa Raihanah, AI & Machine Learning Engineer.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
