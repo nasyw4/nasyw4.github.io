@@ -4,13 +4,13 @@ export const portfolioData = {
   name: "Nasywa Raihanah",
   shortName: "NR",
   role: "AI & Machine Learning Engineer",
-  email: "nasywa.raihanah@gmail.com",
-  linkedin: "linkedin.com/in/nasywa-raihanah",
+  email: "nasywaraihanah@gmail.com",
+  linkedin: "linkedin.com/in/nasywaraihanah",
   github: "github.com/nasywa-raihanah",
   twitter: "twitter.com/nasywaraihanah",
   aboutHeading: "Fresh Perspective, Deep Tech",
   aboutText: "As a fresh graduate with a specialized focus on Artificial Intelligence, my vision is to bridge the gap between complex data architectures and human-centric solutions. My journey started with a fascination for how neural networks mimic cognitive processes, leading me to master end-to-end ML lifecycles.",
-  profileImage: "https://lh3.googleusercontent.com/aida-public/AB6AXuC7z18x2GquoFA8Daq1jtVqpMV_j8T91bLoGsiJ6BxN7LmCwGwPhE9tkNdrqOCPi26m2Zrn3zTNV1s0JgA8jUjRxOR8qrGPLZFhS8qpKx76a5rtuozP1xYc252Y57v2p8KJm8OTzW-A0-G6UtI6R8Vyrxa5rltiTPTtYSXS8x2CGkqQ4x_C0oMSonIXHVmI6aGZfELthmAyPyUTMwfcdBBaKkglpTj7gSPLIlX6jZKSh6l0_wVXMChfCDrnjH3XEKmEnBIYyf0M-34",
+  profileImage: new URL('../assets/profile.jpg', import.meta.url).href,
 };
 
 export const stats: StatItem[] = [
