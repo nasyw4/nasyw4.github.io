@@ -1,20 +1,52 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Nasywa Raihanah - AI & Machine Learning Engineer Portfolio
 
-# Run and deploy your AI Studio app
+This is the source code for my personal portfolio website, showcasing my work experiences, project contributions, and technical skills. 
 
-This contains everything you need to run your app locally.
+The website is built using React, Vite, Tailwind CSS, TypeScript, and Motion.
 
-View your app in AI Studio: https://ai.studio/apps/0a7d5d35-f0f1-4525-90fa-f214e39c94e7
+## 🚀 Live Demo
 
-## Run Locally
+You can view the live site here: [nasyw4.github.io](https://nasyw4.github.io/)
 
-**Prerequisites:**  Node.js
+## 🛠️ Tech Stack
 
+- **Frontend**: React (v19), TypeScript, Vite
+- **Styling**: Tailwind CSS (v4)
+- **Animations**: Motion
+- **Form Submission**: Web3Forms API
+- **Icons**: Lucide React
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 💻 Run Locally
+
+### Prerequisites
+
+Make sure you have Node.js installed on your computer.
+
+### Steps
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/nasyw4/nasyw4.github.io.git
+   cd nasyw4.github.io
+   ```
+
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+3. **Configure environment variables**:
+   Create a `.env` file at the root of the project and add your Web3Forms Access Key:
+   ```env
+   VITE_WEB3FORMS_KEY="your-access-key-here"
+   ```
+
+4. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
+   Open your browser and navigate to `http://localhost:3000`.
+
+## 📦 Deployment
+
+This repository is configured to deploy automatically to GitHub Pages using GitHub Actions. Whenever changes are pushed to the `main` branch, the workflow will build the project and deploy the updated static files.
