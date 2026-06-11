@@ -7,7 +7,6 @@ export default function Footer() {
   const socialLinks = [
     { name: 'LinkedIn', url: `https://${portfolioData.linkedin}` },
     { name: 'GitHub', url: `https://${portfolioData.github}` },
-    { name: 'Twitter', url: `https://${portfolioData.twitter}` },
     { name: 'Mail', url: `mailto:${portfolioData.email}` }
   ];
 

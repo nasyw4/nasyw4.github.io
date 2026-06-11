@@ -7,11 +7,11 @@ export const portfolioData = {
   email: "nasywaraihanah@gmail.com",
   linkedin: "linkedin.com/in/nasywaraihanah",
   github: "github.com/nasyw4",
-  twitter: "twitter.com/nasywaraihanah",
   aboutHeading: "Fresh Perspective, Deep Tech",
-  aboutText: "As a fresh graduate with a specialized focus on Artificial Intelligence, my vision is to bridge the gap between complex data architectures and human-centric solutions. My journey started with a fascination for how neural networks mimic cognitive processes, leading me to master end-to-end ML lifecycles.",
+  aboutText: "As a fresh Informatics Engineering graduate with a strong specialization in Artificial Intelligence, my goal is to bridge the gap between complex data architectures and human-centric solutions. With internship experience building AI-powered workflows, automated topic generation pipelines, and distributed data streams at Nolimit Teknologi Indonesia and PT Telkom Indonesia, I thrive on building intelligent products that translate raw data into actionable insights.",
   profileImage: new URL('../assets/profile.jpg', import.meta.url).href,
   cvUrl: new URL('../assets/Nasywa Raihanah_DS-ML-AI Engineer.pdf', import.meta.url).href,
+  web3formsKey: "5f136b07-8732-453e-b628-5b3ab00b0e76", // Input your Web3Forms Access Key here
 };
 
 export const stats: StatItem[] = [
@@ -108,31 +108,10 @@ export const projects: Project[] = [
     githubUrl: "https://github.com/nasyw4/runner-batch-processing-enrichment-dashboard"
   },
   {
-    id: "contact_finder",
-    title: "Contact Finder",
-    description: "Scraping and analyzing public data to map professional networks and lead discovery. Built with highly parallelized Selenium instances and smart parsing modules that filter irrelevant profiles.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuB9fBlGsClhqYmbKMuvte6DpKibdwzQL1d9DicAUAHKnXRBkvBD-GcgbhFBaYRjPDuXW13JmqIXmuKBl_bThhDrdBhjDW_aTZItXoX50AW5zsyP8KH-Rfzsh2baURaA-k-ugoLakJIWy0MG82vJXp7Nz-kscnC1nU13oo74tOUM1SPnAwOZRc5XCLQecsO0ldTz6HgVDCQ-WxlusRY0MWi9CmteyH6TPKEwVZz9Z1m2MdlNkKv2Dd8FjTOVJb4ucxocHqb8TCacsTo",
-    tags: ["Selenium", "NLP"]
-  },
-  {
     id: "sentiment_analysis",
     title: "Sentiment Analysis",
     description: "Highly accurate emotion classification for customer feedback using BERT transformers. Accomplishes 90%+ classification precision through tailored transfer learning layouts.",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDjGR9tBWdl2IuQnBVhejZPDX-MRl3s0TdezIPeNnFOPSuIyPrG9EdOYMIYNpPOXfJJtiZ8lrWIK0F-BR31X84Xz9KnjsHcJndXyN9_2bmoTgo9dqGXwVOndrjqLVw-WkW1gDi7jW8RLnrp1uUBwCHhAlRB2Z8dVYC1nJ8r3XAgXGaa-lJFnu8XHFdr1jC7MhXkS4BmZDjaJZBYy-Hn9zxMfDRJQa_g6K6-nFkQhe7a8LjicdYjBPt-ObXIjYk_iv4-I2ZVMSPdm0c",
     tags: ["PyTorch", "BERT"]
-  },
-  {
-    id: "travel_time",
-    title: "Travel Time Prediction",
-    description: "Predicting urban commute durations using historical GPS data and XGBoost models. Features map preprocessing algorithms that represent traffic networks as graph features.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCL-uFE80AVwg6MzMuWNc9NXgiEZo-x7W7PFQ1NxRZMsIddlkjWUJoWFz39M8ocI_x6dD6afv2zJfxtfWrzqCipvT1Ni0RKHdPhhGwAarXwDteNX8XNwibo4ib-OCCeu6FymzggYmimBS52tiQVJvRGqajSaZ7aAxPMq87SsnNxit6I0eaKn5uWvYTkNYDzXok5x52lIJgvqecpZhaJEf_Lpq-Qq0giLjs-WLSkW1NWJMyr6ds4AbPzT61gsLWh3qmRaEH3AjnhB5s",
-    tags: ["XGBoost", "Pandas"]
-  },
-  {
-    id: "electricity_forecasting",
-    title: "Electricity Forecasting",
-    description: "Time-series forecasting for smart grid energy optimization using LSTM networks. Implemented stateful sequence-to-sequence cells that capture multi-frequency seasonality logs.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBj4BnYsacy_AFaftSmflrynbkJOThc9nDPXvuLIYU8XtbScExYjZl3-3G8Bx0NDh9fSSPiPP8wn59bDkMtyKpPVoTrLq_3Hl94btw5rsDN_P2LkkfDriJj8Q0Tdyo0zETbG75USENljCSInrnw3ADE1Ukck13KqSx2AwdjnfJZGVymU6kNVw3bhmywDjHox4CM529eiPxtxkQrlPs33dq7iCiYvsNyALJwqSM6yWx5GQh1BfQFj2oNS70UNNFsHoiFMQ_675qy1eU",
-    tags: ["Keras", "TensorFlow"]
   }
 ];

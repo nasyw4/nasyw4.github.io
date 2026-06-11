@@ -8,21 +8,45 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formState.name || !formState.email || !formState.message) return;
 
     setIsSubmitting(true);
     
-    // Simulate API pipeline transmission
-    setTimeout(() => {
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          access_key: portfolioData.web3formsKey || "YOUR_ACCESS_KEY_HERE",
+          name: formState.name,
+          email: formState.email,
+          message: formState.message,
+          subject: `New Portfolio Message from ${formState.name}`
+        })
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitted(true);
+        setFormState({ name: '', email: '', message: '' });
+        
+        // Auto dismiss message badge after some seconds
+        setTimeout(() => setSubmitted(false), 5000);
+      } else {
+        alert("Failed to send transmission. Error: " + (result.message || "Unknown error"));
+      }
+    } catch (err) {
+      console.error(err);
+      alert("Error establishing connection to transmission pipeline.");
+    } finally {
       setIsSubmitting(false);
-      setSubmitted(true);
-      setFormState({ name: '', email: '', message: '' });
-      
-      // Auto dismiss message badge after some seconds
-      setTimeout(() => setSubmitted(false), 5000);
-    }, 1200);
+    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

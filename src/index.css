@@ -5,6 +5,10 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Sora", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-primary: #c3c0ff;
+  --color-secondary: #ffb695;
+  --color-tertiary: #a7f3d0;
 }
 
 /* Custom scrollbar to match sleek visual system */
