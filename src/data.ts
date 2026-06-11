@@ -120,7 +120,7 @@ export const projects: Project[] = [
     id: "ieee_publication",
     title: "Parallel Hybrid 2D CNN-RNN in EEG Post-Stroke Identification",
     description: "Conducted research in signal processing in collaboration with a lecturer, resulting in a published paper in IEEE. Developed a parallel hybrid 2D Convolutional Neural Network (CNN) and Recurrent Neural Network (RNN) model to identify post-stroke conditions based on EEG signal data, and presented the findings at the 2024 11th International Conference on Electrical Engineering, Computer Science and Informatics (EECSI).",
-    image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1507668077129-56e32842fceb?auto=format&fit=crop&w=800&q=80",
     tags: ["Deep Learning", "Signal Processing", "EEG", "CNN-RNN"],
     status: "IEEE Published",
     demoUrl: "https://ieeexplore.ieee.org/document/10776539"
