@@ -6,6 +6,7 @@ export interface Project {
   tags: string[];
   githubUrl?: string;
   demoUrl?: string;
+  status?: string;
 }
 
 export interface Experience {

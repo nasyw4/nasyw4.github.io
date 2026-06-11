@@ -96,11 +96,12 @@ export const projects: Project[] = [
     title: "Agentic Reporting",
     description: "Automated insightful reports using multi-agent systems and LLMs for business intelligence. Created real-time pipelines that fetch metrics from multiple sources, compile summaries, and generate exportable dynamic documents.",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCO4iKd8H9CAZjXnLLgEpaHmoAOQO-bks1GoMmdy8XSIfavsblz2JQxQUTPoyG-ka6nauGdAW3ixAyXkuvA8wi9GRLgFMv-8DODkGSTVRYZX9Wez_cd1D-u4biDApd9eGUqvFI9fHYHbGqGvLoba3Po0jyLdhZ6yeiP62T6UBLYqO-Qm-jg4DKq4QyArCaBJnJPtvR6Z1jaZJ3ia3eyJBGEH8CnbZnT8f5RanaE9zHA8q_lkuATcCkUFpes578y-ipoOmRbc050AEA",
-    tags: ["Python", "LangChain"]
+    tags: ["Python", "LangChain"],
+    status: "In Development"
   },
   {
     id: "media_monitoring",
-    title: "Media Monitoring",
+    title: "Media Monitoring Tools - Capturing Perception (PoC)",
     description: "Built a batch-processing enrichment system that automated emotion and sentiment inference on large-scale social and online media datasets, integrating data retrieval, model inference, PostgreSQL storage, and monitoring dashboards to eliminate manual processing workflows.",
     image: new URL('../assets/runner.png', import.meta.url).href,
     tags: ["Kafka", "FastAPI"],
@@ -109,9 +110,10 @@ export const projects: Project[] = [
   },
   {
     id: "sentiment_analysis",
-    title: "Sentiment Analysis",
+    title: "Sentiment Analysis (PoC)",
     description: "Highly accurate emotion classification for customer feedback using BERT transformers. Accomplishes 90%+ classification precision through tailored transfer learning layouts.",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDjGR9tBWdl2IuQnBVhejZPDX-MRl3s0TdezIPeNnFOPSuIyPrG9EdOYMIYNpPOXfJJtiZ8lrWIK0F-BR31X84Xz9KnjsHcJndXyN9_2bmoTgo9dqGXwVOndrjqLVw-WkW1gDi7jW8RLnrp1uUBwCHhAlRB2Z8dVYC1nJ8r3XAgXGaa-lJFnu8XHFdr1jC7MhXkS4BmZDjaJZBYy-Hn9zxMfDRJQa_g6K6-nFkQhe7a8LjicdYjBPt-ObXIjYk_iv4-I2ZVMSPdm0c",
-    tags: ["PyTorch", "BERT"]
+    tags: ["PyTorch", "BERT", "PoC"],
+    status: "In Development"
   }
 ];

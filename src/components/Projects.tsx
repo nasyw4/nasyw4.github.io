@@ -63,6 +63,17 @@ export default function Projects() {
           >
             {/* Project Image */}
             <div className="relative overflow-hidden h-48 w-full select-none bg-slate-900">
+              {proj.status && (
+                <div className="absolute top-4 right-4 z-10 px-3 py-1 rounded-full bg-[#0b1326]/85 backdrop-blur-md border border-white/10 flex items-center gap-1.5 shadow-lg">
+                  <span className="relative flex h-1.5 w-1.5">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#ffb695] opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-[#ffb695]"></span>
+                  </span>
+                  <span className="text-[9px] font-mono font-bold tracking-widest text-[#dae2fd] uppercase">
+                    {proj.status}
+                  </span>
+                </div>
+              )}
               <img 
                 src={proj.image} 
                 alt={proj.title} 
@@ -141,9 +152,16 @@ export default function Projects() {
               {/* Scrollable details */}
               <div className="p-6 sm:p-8 overflow-y-auto space-y-6">
                 <div>
-                  <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">
-                    {selectedProject.title}
-                  </h3>
+                  <div className="flex flex-wrap items-center gap-3 mb-2">
+                    <h3 className="text-xl sm:text-2xl font-bold text-white">
+                      {selectedProject.title}
+                    </h3>
+                    {selectedProject.status && (
+                      <span className="px-2.5 py-0.5 rounded-full bg-[#ffb695]/10 border border-[#ffb695]/20 text-[#ffb695] font-mono text-[10px] font-semibold uppercase tracking-wider">
+                        {selectedProject.status}
+                      </span>
+                    )}
+                  </div>
                   
                   {/* Tags */}
                   <div className="flex flex-wrap gap-1.5 mt-2">
