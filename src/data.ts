@@ -101,19 +101,19 @@ export const projects: Project[] = [
   },
   {
     id: "media_monitoring",
-    title: "Media Monitoring Tools - Capturing Perception (PoC)",
-    description: "Built a batch-processing enrichment system that automated emotion and sentiment inference on large-scale social and online media datasets, integrating data retrieval, model inference, PostgreSQL storage, and monitoring dashboards to eliminate manual processing workflows.",
-    image: new URL('../assets/runner.png', import.meta.url).href,
-    tags: ["Kafka", "FastAPI"],
-    demoUrl: "https://runner-batch-processing-enrichment.vercel.app/",
-    githubUrl: "https://github.com/nasyw4/runner-batch-processing-enrichment-dashboard"
+    title: "Media Monitoring",
+    description: "Real-time keyword tracking across social media platforms using distributed streaming. Powered by Apache Kafka pipelines and FastAPI backend designed for low latency retrieval and keyword anomaly detection.",
+    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBRRE_dDBmA8GN6Y67PLAkr5Y3eJaUsmni3CI2HbHwkNpg_UkhEksCl0SLyUbra5cq0Z_aTIefo7mCRTRcDKDlJjDiSp_TEMaXibCAlLYvj5gEWzl2JV7FLJ1POJuboXbyUr6_C92fqWvjCsUR7-zMJu0oxmPbAAZTt6el7-Q1pgp56tnmNPGOP8D1jI37kOmmtV14RNLSXP2mIAGUfSxjK25yjuZ5YrLhxql32P9TIuxM0T9s1mAvR-8MGEOlsP2ZO01wR_FsO_tY",
+    tags: ["Kafka", "FastAPI"]
   },
   {
     id: "sentiment_analysis",
-    title: "Sentiment Analysis (PoC)",
-    description: "Highly accurate emotion classification for customer feedback using BERT transformers. Accomplishes 90%+ classification precision through tailored transfer learning layouts.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDjGR9tBWdl2IuQnBVhejZPDX-MRl3s0TdezIPeNnFOPSuIyPrG9EdOYMIYNpPOXfJJtiZ8lrWIK0F-BR31X84Xz9KnjsHcJndXyN9_2bmoTgo9dqGXwVOndrjqLVw-WkW1gDi7jW8RLnrp1uUBwCHhAlRB2Z8dVYC1nJ8r3XAgXGaa-lJFnu8XHFdr1jC7MhXkS4BmZDjaJZBYy-Hn9zxMfDRJQa_g6K6-nFkQhe7a8LjicdYjBPt-ObXIjYk_iv4-I2ZVMSPdm0c",
+    title: "Media Monitoring Tools - Capturing Perception (PoC)",
+    description: "Built a batch-processing enrichment system that automated emotion and sentiment inference on large-scale social and online media datasets, integrating data retrieval, model inference, PostgreSQL storage, and monitoring dashboards to eliminate manual processing workflows.",
+    image: new URL('../assets/runner.png', import.meta.url).href,
     tags: ["PyTorch", "BERT", "PoC"],
+    demoUrl: "https://runner-batch-processing-enrichment.vercel.app/",
+    githubUrl: "https://github.com/nasyw4/runner-batch-processing-enrichment-dashboard",
     status: "In Development"
   }
 ];

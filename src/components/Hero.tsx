@@ -51,15 +51,20 @@ export default function Hero() {
       </motion.h1>
 
       {/* Subtitle */}
-      <motion.p
+      <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3 }}
-        id="hero-desc"
-        className="font-sans text-base sm:text-lg md:text-xl text-[#c7c4d8] max-w-2xl mb-12 leading-relaxed"
+        id="hero-desc-wrapper"
+        className="flex flex-col items-center gap-4 mb-12 select-none"
       >
-        Fresh graduate AI Engineer focused on developing scalable NLP models and distributed data pipelines to solve complex real-world challenges.
-      </motion.p>
+        <span className="text-[#ffb695] font-mono text-xs sm:text-sm tracking-widest uppercase font-semibold">
+          AI Systems • Data Science • Intelligent Automation
+        </span>
+        <p className="font-sans text-base sm:text-lg md:text-xl text-[#c7c4d8] max-w-3xl leading-relaxed">
+          Building AI-powered products that transform complex data into actionable insights and scalable business solutions.
+        </p>
+      </motion.div>
 
       {/* CTAs */}
       <motion.div

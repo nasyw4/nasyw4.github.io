@@ -30,7 +30,7 @@ export default function Footer() {
             {portfolioData.shortName}
           </div>
           <p className="font-sans text-xs text-[#c7c4d8]/60">
-            &copy; {currentYear} {portfolioData.name}. AI Engineer based in Indonesia.
+            &copy; {currentYear} {portfolioData.name}. AI/ML & Data Enthusiast based in Bandung, Indonesia.
           </p>
         </div>
 
