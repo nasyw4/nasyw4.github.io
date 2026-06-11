@@ -167,20 +167,26 @@ export default function Projects() {
                   </p>
                 </div>
 
-                <div className="flex flex-col sm:flex-row gap-3 pt-4 border-t border-white/5">
-                  <button 
-                    onClick={() => window.open('https://github.com', '_blank')}
-                    className="flex-1 py-3 px-5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#c3c0ff]/30 text-white font-mono text-xs flex items-center justify-center gap-2 transition-all cursor-pointer"
-                  >
-                    <Github size={14} /> View Sources
-                  </button>
-                  <button 
-                    onClick={() => window.open('https://github.com', '_blank')}
-                    className="flex-1 py-3 px-5 rounded-xl bg-[#c3c0ff] hover:bg-[#c3c0ff]/90 text-[#1d00a5] font-mono text-xs font-bold flex items-center justify-center gap-2 transition-all cursor-pointer"
-                  >
-                    <ExternalLink size={14} /> Full Demo
-                  </button>
-                </div>
+                {(selectedProject.githubUrl || selectedProject.demoUrl) && (
+                  <div className="flex flex-col sm:flex-row gap-3 pt-4 border-t border-white/5">
+                    {selectedProject.githubUrl && (
+                      <button 
+                        onClick={() => window.open(selectedProject.githubUrl, '_blank')}
+                        className="flex-1 py-3 px-5 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-[#c3c0ff]/30 text-white font-mono text-xs flex items-center justify-center gap-2 transition-all cursor-pointer"
+                      >
+                        <Github size={14} /> View Sources
+                      </button>
+                    )}
+                    {selectedProject.demoUrl && (
+                      <button 
+                        onClick={() => window.open(selectedProject.demoUrl, '_blank')}
+                        className="flex-1 py-3 px-5 rounded-xl bg-[#c3c0ff] hover:bg-[#c3c0ff]/90 text-[#1d00a5] font-mono text-xs font-bold flex items-center justify-center gap-2 transition-all cursor-pointer"
+                      >
+                        <ExternalLink size={14} /> Full Demo
+                      </button>
+                    )}
+                  </div>
+                )}
               </div>
             </motion.div>
           </div>

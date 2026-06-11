@@ -78,8 +78,8 @@ export default function Hero() {
           View Projects <ArrowRight size={14} />
         </a>
         <a
-          href="#"
-          onClick={(e) => e.preventDefault()}
+          href={portfolioData.cvUrl}
+          download="Nasywa Raihanah_DS-ML-AI Engineer.pdf"
           id="hero-btn-cv"
           className="w-full sm:w-auto border border-[#c3c0ff]/60 text-[#c3c0ff] hover:bg-[#c3c0ff]/10 font-semibold text-xs tracking-widest uppercase px-8 py-4 rounded-full transform hover:scale-103 transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer"
         >

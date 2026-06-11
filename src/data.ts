@@ -6,11 +6,12 @@ export const portfolioData = {
   role: "AI & Machine Learning Engineer",
   email: "nasywaraihanah@gmail.com",
   linkedin: "linkedin.com/in/nasywaraihanah",
-  github: "github.com/nasywa-raihanah",
+  github: "github.com/nasyw4",
   twitter: "twitter.com/nasywaraihanah",
   aboutHeading: "Fresh Perspective, Deep Tech",
   aboutText: "As a fresh graduate with a specialized focus on Artificial Intelligence, my vision is to bridge the gap between complex data architectures and human-centric solutions. My journey started with a fascination for how neural networks mimic cognitive processes, leading me to master end-to-end ML lifecycles.",
   profileImage: new URL('../assets/profile.jpg', import.meta.url).href,
+  cvUrl: new URL('../assets/Nasywa Raihanah_DS-ML-AI Engineer.pdf', import.meta.url).href,
 };
 
 export const stats: StatItem[] = [
@@ -21,33 +22,33 @@ export const stats: StatItem[] = [
 export const skillGroups: SkillGroup[] = [
   {
     id: "ai_ml",
-    name: "AI & ML",
+    name: "AI & Machine Learning",
     icon: "Brain",
-    tags: ["NLP", "PyTorch", "Transformers", "LLMs"],
+    tags: ["NLP", "Prompt Engineering", "LLM Integration", "BERTopic", "Deep Learning", "Computer Vision"],
     borderColorClass: "hover:border-primary/40",
     gradientClass: "from-primary to-transparent"
   },
   {
     id: "languages",
-    name: "Languages",
+    name: "Programming Languages",
     icon: "Code2",
-    tags: ["Python", "SQL", "C++", "Shell"],
+    tags: ["Python", "SQL"],
     borderColorClass: "hover:border-tertiary/40",
     gradientClass: "from-tertiary to-transparent"
   },
   {
     id: "frameworks",
-    name: "Frameworks",
+    name: "Full-Stack & APIs",
     icon: "Layers",
-    tags: ["FastAPI", "Django", "Scikit-learn", "Pandas"],
+    tags: ["FastAPI", "Next.js", "React", "Tailwind CSS", "Node.js", "REST APIs"],
     borderColorClass: "hover:border-secondary/40",
     gradientClass: "from-secondary to-transparent"
   },
   {
     id: "data_cloud",
-    name: "Data & Cloud",
+    name: "Databases & Tools",
     icon: "Database",
-    tags: ["Apache Kafka", "Docker", "MongoDB", "Airflow"],
+    tags: ["PostgreSQL", "SQLite", "Elasticsearch", "Apache Kafka", "GitHub", "Streamlit", "Tableau"],
     borderColorClass: "hover:border-red-400/40",
     gradientClass: "from-red-400 to-transparent"
   }
@@ -56,14 +57,35 @@ export const skillGroups: SkillGroup[] = [
 export const experiences: Experience[] = [
   {
     id: "nolimit",
-    company: "NoLimit Indonesia",
-    role: "AI Engineer Intern",
-    period: "Feb 2024 — July 2024",
+    company: "Nolimit Teknologi Indonesia",
+    role: "Data Scientist Intern",
+    period: "Nov 2025 – Mei 2026",
     points: [
-      "Developed and fine-tuned NLP models for Sentiment Analysis with 90%+ precision using BERT.",
-      "Integrated Apache Kafka pipelines for real-time social media data ingestion.",
-      "Automated reporting using Agentic workflows to reduce human manual effort by 40%.",
-      "Optimized database queries for massive datasets (10M+ records) in MongoDB."
+      "Developed and deployed automated NER & Whostation inference pipelines, processing 50K–1M+ social and online media records through REST APIs and Kafka-based messaging, eliminating manual inference workflows and supporting production monitoring systems.",
+      "Fine-tuned ModernBERT and IndoBERT models for text classification on 9K+ labeled samples, generated data using OpenAI LLM, and developed automated training and inference pipelines.",
+      "Contributed to the development of a full-stack media monitoring PoC using Next.js, TypeScript, FastAPI, and Python, processing 12K+ social and online media records and generating 900+ discussion topics through automated topic generation pipelines.",
+      "Built a batch-processing enrichment system and monitoring dashboard for emotion and sentiment inference, automating processing across datasets ranging from thousands to over 1M records while leveraging PostgreSQL for data storage and pipeline management.",
+      "Developed an agentic reporting system leveraging Elasticsearch, BERTopic, and prompt-engineered OpenAI workflows to automatically generate 9–10 key issues per report, reducing report preparation time from hours to minutes."
+    ]
+  },
+  {
+    id: "telkom_1",
+    company: "PT Telkom Indonesia",
+    role: "Data Scientist Intern",
+    period: "Oct 2024 – Mar 2025",
+    points: [
+      "Extracted, transformed, and cleaned data using SQL and Python to support business intelligence reporting and business performance analysis.",
+      "Built dynamic dashboards for both sales teams and internal stakeholders, streamlining product performance tracking and enhancing strategic decision-making.",
+      "Assisted in developing forecasting models using Python to support business prediction and trend analysis."
+    ]
+  },
+  {
+    id: "telkom_2",
+    company: "PT Telkom Indonesia",
+    role: "Data Scientist Intern (Practical Work)",
+    period: "August 2024",
+    points: [
+      "Developed an automated video-to-text extraction pipeline using OpenAI Whisper models, converting educational video content into structured text to support downstream NLP and analytics workflows."
     ]
   }
 ];
@@ -81,7 +103,9 @@ export const projects: Project[] = [
     title: "Media Monitoring",
     description: "Real-time keyword tracking across social media platforms using distributed streaming. Powered by Apache Kafka pipelines and FastAPI backend designed for low latency retrieval and keyword anomaly detection.",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBRRE_dDBmA8GN6Y67PLAkr5Y3eJaUsmni3CI2HbHwkNpg_UkhEksCl0SLyUbra5cq0Z_aTIefo7mCRTRcDKDlJjDiSp_TEMaXibCAlLYvj5gEWzl2JV7FLJ1POJuboXbyUr6_C92fqWvjCsUR7-zMJu0oxmPbAAZTt6el7-Q1pgp56tnmNPGOP8D1jI37kOmmtV14RNLSXP2mIAGUfSxjK25yjuZ5YrLhxql32P9TIuxM0T9s1mAvR-8MGEOlsP2ZO01wR_FsO_tY",
-    tags: ["Kafka", "FastAPI"]
+    tags: ["Kafka", "FastAPI"],
+    demoUrl: "https://runner-batch-processing-enrichment.vercel.app/",
+    githubUrl: "https://github.com/nasyw4/runner-batch-processing-enrichment-dashboard"
   },
   {
     id: "contact_finder",
