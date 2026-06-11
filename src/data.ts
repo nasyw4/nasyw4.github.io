@@ -32,7 +32,7 @@ export const skillGroups: SkillGroup[] = [
     id: "languages",
     name: "Programming Languages",
     icon: "Code2",
-    tags: ["Python", "SQL"],
+    tags: ["Python", "SQL", "TypeScript"],
     borderColorClass: "hover:border-tertiary/40",
     gradientClass: "from-tertiary to-transparent"
   },
@@ -101,8 +101,8 @@ export const projects: Project[] = [
   {
     id: "media_monitoring",
     title: "Media Monitoring",
-    description: "Real-time keyword tracking across social media platforms using distributed streaming. Powered by Apache Kafka pipelines and FastAPI backend designed for low latency retrieval and keyword anomaly detection.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBRRE_dDBmA8GN6Y67PLAkr5Y3eJaUsmni3CI2HbHwkNpg_UkhEksCl0SLyUbra5cq0Z_aTIefo7mCRTRcDKDlJjDiSp_TEMaXibCAlLYvj5gEWzl2JV7FLJ1POJuboXbyUr6_C92fqWvjCsUR7-zMJu0oxmPbAAZTt6el7-Q1pgp56tnmNPGOP8D1jI37kOmmtV14RNLSXP2mIAGUfSxjK25yjuZ5YrLhxql32P9TIuxM0T9s1mAvR-8MGEOlsP2ZO01wR_FsO_tY",
+    description: "Built a batch-processing enrichment system that automated emotion and sentiment inference on large-scale social and online media datasets, integrating data retrieval, model inference, PostgreSQL storage, and monitoring dashboards to eliminate manual processing workflows.",
+    image: new URL('../assets/runner.png', import.meta.url).href,
     tags: ["Kafka", "FastAPI"],
     demoUrl: "https://runner-batch-processing-enrichment.vercel.app/",
     githubUrl: "https://github.com/nasyw4/runner-batch-processing-enrichment-dashboard"

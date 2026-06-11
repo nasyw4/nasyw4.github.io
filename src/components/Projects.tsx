@@ -42,7 +42,7 @@ export default function Projects() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
           className="text-xs sm:text-sm font-mono text-[#c3c0ff] hover:underline cursor-pointer flex items-center gap-1"
-          onClick={() => window.open('https://github.com', '_blank')}
+          onClick={() => window.open('https://github.com/nasyw4', '_blank')}
         >
           View All Research • GitHub
         </motion.div>
