@@ -200,7 +200,7 @@ export default function Projects() {
                         onClick={() => window.open(selectedProject.demoUrl, '_blank')}
                         className="flex-1 py-3 px-5 rounded-xl bg-[#c3c0ff] hover:bg-[#c3c0ff]/90 text-[#1d00a5] font-mono text-xs font-bold flex items-center justify-center gap-2 transition-all cursor-pointer"
                       >
-                        <ExternalLink size={14} /> Full Demo
+                        <ExternalLink size={14} /> {selectedProject.status === "IEEE Published" ? "View Paper" : "Full Demo"}
                       </button>
                     )}
                   </div>
