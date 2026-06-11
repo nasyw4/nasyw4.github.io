@@ -93,27 +93,27 @@ export const experiences: Experience[] = [
 export const projects: Project[] = [
   {
     id: "agentic_reporting",
-    title: "Agentic Reporting",
-    description: "Automated insightful reports using multi-agent systems and LLMs for business intelligence. Created real-time pipelines that fetch metrics from multiple sources, compile summaries, and generate exportable dynamic documents.",
+    title: "Agentic Custom Reporting",
+    description: "AI-powered reporting platform that transforms large-scale social and online media data into executive-ready reports, reducing report preparation time from hours to minutes through automated topic discovery and insight generation.",
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCO4iKd8H9CAZjXnLLgEpaHmoAOQO-bks1GoMmdy8XSIfavsblz2JQxQUTPoyG-ka6nauGdAW3ixAyXkuvA8wi9GRLgFMv-8DODkGSTVRYZX9Wez_cd1D-u4biDApd9eGUqvFI9fHYHbGqGvLoba3Po0jyLdhZ6yeiP62T6UBLYqO-Qm-jg4DKq4QyArCaBJnJPtvR6Z1jaZJ3ia3eyJBGEH8CnbZnT8f5RanaE9zHA8q_lkuATcCkUFpes578y-ipoOmRbc050AEA",
     tags: ["Python", "LangChain"],
     status: "In Development"
   },
   {
-    id: "media_monitoring",
-    title: "Media Monitoring",
-    description: "Real-time keyword tracking across social media platforms using distributed streaming. Powered by Apache Kafka pipelines and FastAPI backend designed for low latency retrieval and keyword anomaly detection.",
-    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBRRE_dDBmA8GN6Y67PLAkr5Y3eJaUsmni3CI2HbHwkNpg_UkhEksCl0SLyUbra5cq0Z_aTIefo7mCRTRcDKDlJjDiSp_TEMaXibCAlLYvj5gEWzl2JV7FLJ1POJuboXbyUr6_C92fqWvjCsUR7-zMJu0oxmPbAAZTt6el7-Q1pgp56tnmNPGOP8D1jI37kOmmtV14RNLSXP2mIAGUfSxjK25yjuZ5YrLhxql32P9TIuxM0T9s1mAvR-8MGEOlsP2ZO01wR_FsO_tY",
-    tags: ["Kafka", "FastAPI"]
-  },
-  {
-    id: "sentiment_analysis",
-    title: "Media Monitoring Tools - Capturing Perception (PoC)",
+    id: "runner_batch_processing",
+    title: "Runner Batch Processing",
     description: "Built a batch-processing enrichment system that automated emotion and sentiment inference on large-scale social and online media datasets, integrating data retrieval, model inference, PostgreSQL storage, and monitoring dashboards to eliminate manual processing workflows.",
     image: new URL('../assets/runner.png', import.meta.url).href,
-    tags: ["PyTorch", "BERT", "PoC"],
+    tags: ["Python", "FastAPI", "PostgreSQL"],
     demoUrl: "https://runner-batch-processing-enrichment.vercel.app/",
-    githubUrl: "https://github.com/nasyw4/runner-batch-processing-enrichment-dashboard",
+    githubUrl: "https://github.com/nasyw4/runner-batch-processing-enrichment-dashboard"
+  },
+  {
+    id: "media_monitoring_poc",
+    title: "Media Monitoring Tools - Capturing Perception (PoC)",
+    description: "AI-powered media monitoring system that transforms 12K+ social and online media records into 900+ automatically generated discussion topics, enabling sentiment analysis, trend exploration, and decision intelligence.",
+    image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBRRE_dDBmA8GN6Y67PLAkr5Y3eJaUsmni3CI2HbHwkNpg_UkhEksCl0SLyUbra5cq0Z_aTIefo7mCRTRcDKDlJjDiSp_TEMaXibCAlLYvj5gEWzl2JV7FLJ1POJuboXbyUr6_C92fqWvjCsUR7-zMJu0oxmPbAAZTt6el7-Q1pgp56tnmNPGOP8D1jI37kOmmtV14RNLSXP2mIAGUfSxjK25yjuZ5YrLhxql32P9TIuxM0T9s1mAvR-8MGEOlsP2ZO01wR_FsO_tY",
+    tags: ["Next.js", "FastAPI", "PoC"],
     status: "In Development"
   }
 ];
