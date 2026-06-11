@@ -11,7 +11,7 @@ export const portfolioData = {
   aboutText: "As a fresh Informatics Engineering graduate with a strong specialization in Artificial Intelligence, my goal is to bridge the gap between complex data architectures and human-centric solutions. With internship experience building AI-powered workflows, automated topic generation pipelines, and distributed data streams at Nolimit Teknologi Indonesia and PT Telkom Indonesia, I thrive on building intelligent products that translate raw data into actionable insights.",
   profileImage: new URL('../assets/profile.jpg', import.meta.url).href,
   cvUrl: new URL('../assets/Nasywa Raihanah_DS-ML-AI Engineer.pdf', import.meta.url).href,
-  web3formsKey: "5f136b07-8732-453e-b628-5b3ab00b0e76", // Input your Web3Forms Access Key here
+  web3formsKey: import.meta.env.VITE_WEB3FORMS_KEY || "",
 };
 
 export const stats: StatItem[] = [
