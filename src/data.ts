@@ -3,7 +3,7 @@ import { Project, Experience, SkillGroup, StatItem } from './types';
 export const portfolioData = {
   name: "Nasywa Raihanah",
   shortName: "NR",
-  role: "AI & Machine Learning Engineer",
+  role: "Data Scientist, AI/ML Engineer, & Lifelong learner",
   email: "nasywaraihanah@gmail.com",
   linkedin: "linkedin.com/in/nasywaraihanah",
   github: "github.com/nasyw4",
