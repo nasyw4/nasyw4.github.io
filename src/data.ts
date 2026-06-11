@@ -115,5 +115,14 @@ export const projects: Project[] = [
     image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBRRE_dDBmA8GN6Y67PLAkr5Y3eJaUsmni3CI2HbHwkNpg_UkhEksCl0SLyUbra5cq0Z_aTIefo7mCRTRcDKDlJjDiSp_TEMaXibCAlLYvj5gEWzl2JV7FLJ1POJuboXbyUr6_C92fqWvjCsUR7-zMJu0oxmPbAAZTt6el7-Q1pgp56tnmNPGOP8D1jI37kOmmtV14RNLSXP2mIAGUfSxjK25yjuZ5YrLhxql32P9TIuxM0T9s1mAvR-8MGEOlsP2ZO01wR_FsO_tY",
     tags: ["Next.js", "FastAPI", "PoC"],
     status: "In Development"
+  },
+  {
+    id: "ieee_publication",
+    title: "Parallel Hybrid 2D CNN-RNN in EEG Post-Stroke Identification",
+    description: "Conducted research in signal processing in collaboration with a lecturer, resulting in a published paper in IEEE. Developed a parallel hybrid 2D Convolutional Neural Network (CNN) and Recurrent Neural Network (RNN) model to identify post-stroke conditions based on EEG signal data, and presented the findings at the 2024 11th International Conference on Electrical Engineering, Computer Science and Informatics (EECSI).",
+    image: "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?auto=format&fit=crop&w=800&q=80",
+    tags: ["Deep Learning", "Signal Processing", "EEG", "CNN-RNN"],
+    status: "IEEE Published",
+    demoUrl: "https://ieeexplore.ieee.org/document/10776539"
   }
 ];
